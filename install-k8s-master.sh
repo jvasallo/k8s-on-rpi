@@ -2,6 +2,9 @@
 
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 
+echo "Symlinking mkdir"
+ln -s /bin/mkdir /usr/bin/mkdir
+
 apt-get install bridge-utils
 
 echo "Copying kubernetes service configuration files"
